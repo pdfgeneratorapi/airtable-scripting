@@ -35,7 +35,7 @@ if (records.length) {
     /**
      * Make PDF Generator API request with API credentials and record data as request body
      */
-    const response = await remoteFetchAsync(url, {
+    const response = await fetch(url, {
         method: 'POST', 
         redirect: 'follow',
         headers: {
